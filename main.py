@@ -40,7 +40,7 @@ for i in range(10):
 pg.init()
 screen = pg.display.set_mode((WIDTH, HEIGHT))
 
-#ゲームの初期設定関数
+#ゲームの初期画面関数
 def gameInit():
     global page
     #---画面を初期化
@@ -149,6 +149,7 @@ def gameReset():
         gy = random.randint(20, HEIGHT - 60)
         games.append(pg.Rect(gx, gy, 50, 50)) 
 
+#ゲームクリア関数
 def gameClear():
     global page
     #---画面を初期化
@@ -163,6 +164,7 @@ def gameClear():
         gameReset()
         page = 1
 
+#ゲームオーバー関数
 def gameOver():
     global page
     #---画面を初期化
